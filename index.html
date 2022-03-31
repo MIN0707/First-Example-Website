@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layout.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&family=Shadows+Into+Light&display=swap');
+
+        body{
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 120%;
+        }
+
+        .bg-black {
+            background-color: #000;
+            color: #fff;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .bg-image {
+            background-image: url(img/coffeehouse.jpeg);
+        }
+
+        .bg-text {
+            font-size: 80px;
+            color: #fff;
+        }
+
+        .left-text {
+            left: 20px;
+            bottom: 15px;
+            color: #fff;
+        }
+
+        .right-text {
+            right: 20px;
+            bottom: 15px;
+            color: #fff;
+        }
+
+        .padding-48 {
+            padding: 48px 0;
+        }
+
+        .bg-light-grey {
+            background-color: #ddd;
+        }
+        form{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed-top float-container">
+        <a class="left width-25 padding-10 text-center bg-black" href="">홈</a>
+        <a class="left width-25 padding-10 text-center bg-black" href="">소개</a>
+        <a class="left width-25 padding-10 text-center bg-black" href="">메뉴</a>
+        <a class="left width-25 padding-10 text-center bg-black" href="">위치</a>
+    </nav>
+
+    <div class="bg-image">
+        <h1 class="bg-text">The<br>Cafe</h1>
+        <span class="bg-black left-text absolute hide-mobile">영업시간 오전9시 - 오후6시</span>
+        <span class="right-text absolute">인천어딘가</span>
+    </div>
+
+    <h3 id="about" class="text-center padding-48"><span class="bg-black">카페 소개</span></h3>
+
+    <div class="about padding-10" style="margin: auto; max-width: 700px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate tempora blanditiis perspiciatis,
+            pariatur accusantium molestias explicabo laboriosam beatae error culpa hic ab possimus, voluptatum quisquam
+            numquam temporibus quaerat eum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate tempora blanditiis perspiciatis,
+            pariatur accusantium molestias explicabo laboriosam beatae error culpa hic ab possimus, voluptatum quisquam
+            numquam temporibus quaerat eum.</p>
+        <br>
+        <div class="bg-light-grey padding-10" style="border-left: 5px solid #888;">
+            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae amet debitis distinctio
+                    tenetur, ipsam eligendi veritatis ullam quasi dolorem. Odit aut cum nesciunt libero accusantium
+                    nostrum voluptatibus dolore dignissimos?</i>
+            </p>
+            <br>
+            <p>카페사장</p>
+        </div>
+        <br>
+        <img src="./img/coffeeshop.jpeg" alt="">
+        <br>
+        <p><b>영업시간</b> 오전 9시 - 오후 6시</p>
+        <p><b>위치</b> 인천어딘가</p>
+    </div>
+
+    <h3 id="menu" class="text-center padding-48"><span class="bg-black">메뉴</span></h3>
+    <div class="menu padding-10" style="margin: auto; max-width: 700px;">
+        <!-- 메뉴판 -->
+        <div class="float-container">
+            <a href="" class="left width-50 text-center padding-10" style="background-color: #ddd;">Eat</a>
+            <a href="" class="left width-50 text-center padding-10">Drink</a>
+        </div>
+        <div class="box-shadow">
+            <h3>Bread Basket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <h3>Bread Basket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <h3>Bread Basket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <h3>Bread Basket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <h3>Bread Basket</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+        </div>
+
+        <img src="./img/coffeehouse2.jpeg" alt="">
+    </div>
+
+    <h3 id="location" class="text-center padding-48"><span class="bg-black">위치</span></h3>
+    <div class="location padding-10" style="margin: auto; max-width: 700px;">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+
+        <img src="./img/map.jpeg" alt="">
+
+        <p><span class="bg-black">FYI!</span> Lorem ipsum dolor sit amet consectetur</p>
+        <p><b>Reserve</b> Lorem ipsum dolor sit put in your information</p>
+
+        <form action="" class="border-ri" style="padding: 17px;">
+            <p>
+                <input type="text" placeholder="성함" class="width-100 border-ri">
+            </p>
+            <p>
+                <input type="text" placeholder="인원" class="width-100 border-ri">
+            </p>
+            <p>
+                <input type="date" placeholder="" class="width-100 border-ri">
+            </p>
+            <p>
+                <input type="text" placeholder="메세지" class="width-100 border-ri">
+            </p>
+            <p>
+                <button type="submit" class="btn bg-black border-ri">메세지 보내기</button>
+            </p>
+        </form>
+    </div>
+
+    <br>
+
+    <footer class="bg-light-grey padding-48">
+        <p class="text-center">2022 Example Web Site - by <a style="color: aqua;" href="https://github.com/MIN0707" target="__blank">MIN</a></p>
+    </footer>
+</body>
+</html>
